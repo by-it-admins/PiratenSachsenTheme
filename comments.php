@@ -59,5 +59,7 @@
       <div id="bottom"></div>
      </div>
 <?php else: ?>
-<p>Die Kommentarfunktion in diesem Artikel wurde deaktiviert</p>
+	<?php if( !is_page() ): ?>
+	<p>Die Kommentarfunktion in diesem Artikel wurde deaktiviert</p>
+	<?php endif; ?>
 <?php endif; ?>
