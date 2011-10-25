@@ -262,7 +262,7 @@ function getBreadcrumb ($rtn = "",$currentPage, $flag = null) {
  */
 if (!function_exists('initWidgets')) { // klml http://codex.wordpress.org/Child_Themes#Using_functions.php
 	function initWidgets () {
-		$beforeWidget626 = '<div id="box-626" class="fixed-height-277">';  // Just for the startpage, so it goes width fixed height
+		$beforeWidget626 = '<div id="box-626" class="fixed-height-310">';  // Just for the startpage, so it goes width fixed height
 		$beforeWidget468 = '<div id="box-468" class="fixed-height-277">';  // Just for the startpage, so it goes width fixed height
 		$beforeWidget468no = '<div id="box-468" class="nomargin fixed-height-277">';  // Just for the startpage, so it goes width fixed height
 		$beforeWidget308 = '<div id="box-308" class="fixed-height-310">'; // Just for the startpage, so it goes width fixed height
