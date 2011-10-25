@@ -42,12 +42,12 @@ class LastPostsWidget extends WP_Widget {
     		$date = date_create($post->post_date);
     		if ($count == 1) {
     			$html .= '<strong>'.$post->post_title.'</strong> vom '.date_format($date, 'd.m.Y').'<br />';
-    			$html .= substr($post->post_content,0,275)." ... <a href='".get_permalink($post->ID)."'>mehr lesen</a>";
+    			$html .= substr(strip_tags($post->post_content),0,275)." ... <a href='".get_permalink($post->ID)."'>mehr lesen</a>";
     		}
     		else {
     			$html .= "<hr />";
     			$html .= '<strong>'.$post->post_title.'</strong> vom '.date_format($date, 'd.m.Y').'<br />';
-    			$html .= substr($post->post_content,0,125)." ... <a href='".get_permalink($post->ID)."'>mehr lesen</a>";
+    			$html .= substr(strip_tags($post->post_content),0,125)." ... <a href='".get_permalink($post->ID)."'>mehr lesen</a>";
     		}
     		++$count;
     	}
